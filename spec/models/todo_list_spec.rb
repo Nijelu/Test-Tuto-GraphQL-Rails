@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.describe TodoList, type: :model do
   it 'has a valid factory' do
     # Check that the factory we created is valid
-    expect(build(:todo_list)).to_be_valid
+    expect(build(:todo_list)).to be_valid
   end
 
   let(:attributes) do
