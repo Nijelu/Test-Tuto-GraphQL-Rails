@@ -1,7 +1,7 @@
 FactoryBot.define do
     factory :item do
         sequence(:name) { |n| "Item name #{n}" }
-        done false
+        done { false }
 
         todo_list
     end
